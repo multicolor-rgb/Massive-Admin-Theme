@@ -1,4 +1,4 @@
-# Massive-Admin-Theme for GetSimple CMS
+# Massive Admin Theme for GetSimple CMS
 version 2.0 released!
 
 Original Repo -> http://get-simple.info/extend/plugin/massive-admin-theme/1265/
