@@ -209,6 +209,8 @@ background:#000409;
 <script>
 
 
+if(window.location.indexOf('?type=carousel')<-1){
+
 	window.onload = function(){
 	const imageTableTd = document.querySelectorAll('#imageTable .All');
 
@@ -294,6 +296,10 @@ e.querySelector('.imgthumb').remove();
 
 });};
 
+
+
+
+};
 
 </script>
 

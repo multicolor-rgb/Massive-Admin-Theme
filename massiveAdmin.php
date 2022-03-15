@@ -9,7 +9,7 @@
 	register_plugin(
 		$thisfile, //Plugin id
 		'Massive Admin Theme', 	//Plugin name
-		'2.0', 		//Plugin version
+		'2.2', 		//Plugin version
 		'Mateusz Skrzypczak',  //Plugin author
 		'https://multicolor.stargard.pl', //author website
 		'Admin theme with new function', //Plugin description
@@ -99,7 +99,10 @@
 	$massiveOptionFile = GSDATAOTHERPATH . '/massiveadmin/massiveOption.json';
 
 		$massiveOptionFileContent = @file_get_contents($massiveOptionFile);
-$newmassiveOptionFile = json_decode($massiveOptionFileContent);
+
+		if(file_exists($massiveOptionFileContent)){
+
+			$newmassiveOptionFile = json_decode($massiveOptionFileContent);
 
 	if( $newmassiveOptionFile->gridfront == "yes"){
 		register_style('massivegrid', $SITEURL.'plugins/massiveAdmin/css/bootstrap-grid.min.css', '2.0', 'screen');
@@ -109,6 +112,9 @@ $newmassiveOptionFile = json_decode($massiveOptionFileContent);
 	if($newmassiveOptionFile->grid == "no"){
 			echo'<style>.upcke{display:none !important}</style>';
 	};
+
+		};
+
 
 
 
@@ -134,7 +140,7 @@ $newmassiveOptionFile = json_decode($massiveOptionFileContent);
 		 
 $massiveOptionFile = GSDATAOTHERPATH . '/massiveadmin/massiveOption.json';
 
- 	$massiveOptionFileContent = file_get_contents($massiveOptionFile);
+ 	$massiveOptionFileContent = @file_get_contents($massiveOptionFile);
 $newmassiveOptionFile = json_decode($massiveOptionFileContent);
 
 
@@ -276,7 +282,7 @@ $HelpfileDecode = json_decode($helpFileContent);
 $checkTrue = $HelpfileDecode->checkbox;
 $help = i18n_r('massiveAdmin/HELP');
 
-if( $checkTrue == true){
+if( $checkTrue == 'true'){
 	add_action('nav-tab','createSideMenu',array($thisfile,'<i class="uil uil-life-ring"></i>'.$help,'helpfromuser'));
 	}
 }

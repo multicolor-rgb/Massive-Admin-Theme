@@ -12,7 +12,7 @@ if(file_exists($filename)){
 
 foreach($data as $query){
 
-echo '<li><a href="'.$query["url"].'" target="'.$query["linkblank"].'">'.$query["icon"].' '.$query["name"].'</a></li>';
+echo '<li><a href="'.$query["url"].'" target="'.$query["linkblank"].'"><i class="'.$query["icon"].'"></i> '.$query["name"].'</a></li>';
 
 };
 

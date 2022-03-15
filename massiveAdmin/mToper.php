@@ -7,6 +7,18 @@
     $datee = @file_get_contents( $finaljson);
     $data = json_decode($datee);
  
+
+	
+
+	$folder2        = GSDATAOTHERPATH . '/massiveMenuExt/';
+$filename2     = $folder2 . 'menuext.json';
+  $datee2 = @file_get_contents($filename2);
+$data2 = json_decode($datee2,true);
+
+
+
+
+
 ;?>
 
 
@@ -73,7 +85,7 @@
 				<div class="m-toper">
 					<div class="m-toper-container">
 						<ul class="massiveedit">
-							<li><a href="<?php get_site_url();?>admin/edit.php?id=';get_page_slug();echo'"><i class="uil uil-edit"></i><?php echo i18n('EDITPAGE_TITLE');?></a></li>
+							<li><a href="<?php get_site_url();?>admin/edit.php?id=<?php echo get_page_slug();?>"><i class="uil uil-edit"></i><?php echo i18n('EDITPAGE_TITLE');?></a></li>
 							<li><a href="<?php get_site_url();?>admin/edit.php"><i class="uil uil-plus-circle"></i> <?php echo i18n('SIDE_CREATE_NEW');?></a></li> 
 						</ul>
 					
@@ -83,6 +95,20 @@
 							<li id="nav_theme"><a href="<?php get_site_url();?>admin/theme.php"><i class="uil uil-paint-tool"></i><?php echo i18n('TAB_THEME');?></a></li> 
 							<li id="nav_backups"><a href="<?php get_site_url();?>admin/backups.php"><i class="uil uil-save"></i> <?php echo i18n('TAB_BACKUPS');?></a></li> 
 							<li id="nav_plugins"><a href="<?php get_site_url();?>admin/plugins.php"><i class="uil uil-plug"></i><?php i18n('PLUGINS_NAV');?></a></li> 
+						
+							<?php 
+
+if(file_exists($filename2)){
+
+	foreach($data2 as $query){
+	
+	echo '<li><a href="'.$query["url"].'" target="'.$query["linkblank"].'"><i class="'.$query["icon"].'"></i> '.$query["name"].'</a></li>';
+	
+	};
+	
+	};
+	?>
+						
 							<li> <a href="<?php get_site_url();?>admin/settings.php"><i class="uil uil-setting"></i></a> 
  					<li><a href="<?php get_site_url();?>admin/logout.php"><i class="uil uil-power"></i></a>
 					</ul>
