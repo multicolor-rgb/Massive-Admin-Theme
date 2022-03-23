@@ -85,6 +85,7 @@
 		'CHANGETITLECOLOR' 	=> 'Cambiar los Colores de CMS',
 		'MAINCOLOR' 		=> 'Color Principal:',
 		'BGCOLOR' 			=> 'Color de Fondo:',
+		'CHANGENAME' => "cambie el apodo a algo que no sea el apodo del administrador",
 
  	);
 

@@ -430,6 +430,9 @@ console.log(valuethis);
 
 if(valuethis==nodelete){
     document.querySelector('input[name="savecreateuser"]').addEventListener('click',btn=>{
+
+        alert('<?php echo i18n_r("massiveAdmin/CHANGENAME") ;?>');
+
         document.querySelector('input[name="createuserhidden"]').value = "";
 
         btn.preventDefault();

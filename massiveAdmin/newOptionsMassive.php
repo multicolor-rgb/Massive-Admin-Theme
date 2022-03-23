@@ -209,7 +209,7 @@ background:#000409;
 <script>
 
 
-if(window.location.indexOf('?type=carousel')<-1){
+if(window.location.href.indexOf('?type=carousel')<0){
 
 	window.onload = function(){
 	const imageTableTd = document.querySelectorAll('#imageTable .All');
