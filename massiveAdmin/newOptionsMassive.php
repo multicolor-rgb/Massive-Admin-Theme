@@ -209,7 +209,7 @@ background:#000409;
 <script>
 
 
-if(window.location.indexOf('?type=carousel')<-1){
+if(window.location.href.indexOf('?type=carousel')<0){
 
 	window.onload = function(){
 	const imageTableTd = document.querySelectorAll('#imageTable .All');
@@ -347,3 +347,25 @@ if(isset($_POST['copy-rename-massive'])){
 
 
 ?>
+
+
+<script>
+
+document.querySelectorAll('.imgthumb').forEach(x=>{
+
+	if(x.innerHTML==''){
+
+		x.innerHTML = `<div class="massive-folder-linker"><i class="uil uil-file" style="  font-size: 4rem;
+  display: block;
+  margin-bottom: 15px;"></i></div>`;
+
+	}
+
+
+});
+
+
+
+
+
+</script>

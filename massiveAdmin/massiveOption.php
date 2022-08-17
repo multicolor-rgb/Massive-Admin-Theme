@@ -21,6 +21,10 @@ border: none;
 border-radius: 5px;}.hidetitle{width:100%;background:#fafafa;padding:10px;border:solid 1px #ddd;display:flex;justify-content:space-between;align-items:center;margin-top:20px}.hidetitle h3{margin:0;padding:0}.hide{display:none}.hidecontent{padding:15px;border:solid 1px #ddd;margin-bottom:20px}
 </style>
 
+ 
+
+
+
 			<div class="massiveoption">
 
 			<div class="hidetitle" id="hidetitle1"><h3><?php echo i18n_r('massiveAdmin/MAITENANCETITLE');?></h3> <i class="uil uil-arrow-down"></i></div>

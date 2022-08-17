@@ -163,12 +163,14 @@ if(isset($_POST['savecreateuser'])){
 $newposUser = $_POST['createuserhidden'];
 
 $newposUserwithspace = str_replace(' ','-',$newposUser);
+$supportUserMailMonkey = str_replace('@', '', $newposUserwithspace);
+$supportUserMailFinal = str_replace('.', '', $supportUserMailMonkey );
 $createUserEmail =$_POST['createuseremail'];
 $pass = $_POST['createpassword'];
 $lang = $_POST['lang'];
 $passhash = passhash($pass);
 $folder = '../data/users';
-$newUserFile = $folder.'/'.$newposUserwithspace.'.xml';
+$newUserFile = $folder.'/'.$supportUserMailFinal.'.xml';
 $userinfo='<?xml version="1.0" encoding="UTF-8"?>
 <item><USR>'.strtolower($newposUser).'</USR><NAME/><PWD>'.$passhash.'</PWD><EMAIL>'.$createUserEmail.'</EMAIL><HTMLEDITOR>1</HTMLEDITOR><TIMEZONE/><LANG>'.$lang.'</LANG></item>';
 file_put_contents($newUserFile , $userinfo);
@@ -356,7 +358,12 @@ foreach ($files as &$value) {
     $newDir = array('','');
     $newValue =str_replace($oldDir,$newDir,$value);
 
-    echo '<li> <span class="name">'.$newValue.'</span><form action="" method="POST"><button type="submit" name="'.$newValue.'" class="delete-this" style="background:red;color:#fff;border:none;font-size:1.1rem;border-radius:3px"><i class="uil uil-trash-alt"></i></button></form> </li>';
+    $username = new SimpleXMLElement(file_get_contents($value));
+
+    $usrfile = $username->USR[0];
+
+
+    echo '<li> <span class="name">'. $usrfile.'</span><form action="" method="POST"><button type="submit" name="'.$newValue.'" class="delete-this" style="background:red;color:#fff;border:none;font-size:1.1rem;border-radius:3px"><i class="uil uil-trash-alt"></i></button></form> </li>';
  
 
     if(isset($_POST[$newValue])){
@@ -430,6 +437,9 @@ console.log(valuethis);
 
 if(valuethis==nodelete){
     document.querySelector('input[name="savecreateuser"]').addEventListener('click',btn=>{
+
+        alert('<?php echo i18n_r("massiveAdmin/CHANGENAME") ;?>');
+
         document.querySelector('input[name="createuserhidden"]').value = "";
 
         btn.preventDefault();

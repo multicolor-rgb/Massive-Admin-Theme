@@ -85,6 +85,7 @@
 		'CHANGETITLECOLOR' 	=> 'Change CMS Colors ',
 		'MAINCOLOR' 		=> 'Main Color:',
 		'BGCOLOR' 			=> 'Background Color:',
+		'CHANGENAME' => "change the nickname to something other than the administrator nickname",
 
  	);
 

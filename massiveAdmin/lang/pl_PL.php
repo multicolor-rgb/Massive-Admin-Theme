@@ -85,6 +85,7 @@
 		'CHANGETITLECOLOR' 	=> 'Zmień kolory CMS ',
 		'MAINCOLOR' 		=> 'Główny kolor:',
 		'BGCOLOR' 			=> 'Kolor tła:',
+		'CHANGENAME' => 'zmień nick na niepodobny do nicku administratora',
 
  	);
 

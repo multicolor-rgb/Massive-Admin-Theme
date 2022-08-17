@@ -9,7 +9,7 @@
 	register_plugin(
 		$thisfile, //Plugin id
 		'Massive Admin Theme', 	//Plugin name
-		'2.2', 		//Plugin version
+		'2.5', 		//Plugin version
 		'Mateusz Skrzypczak',  //Plugin author
 		'https://multicolor.stargard.pl', //author website
 		'Admin theme with new function', //Plugin description
@@ -100,7 +100,7 @@
 
 		$massiveOptionFileContent = @file_get_contents($massiveOptionFile);
 
-		if(file_exists($massiveOptionFileContent)){
+		if(file_exists($massiveOptionFile)){
 
 			$newmassiveOptionFile = json_decode($massiveOptionFileContent);
 
