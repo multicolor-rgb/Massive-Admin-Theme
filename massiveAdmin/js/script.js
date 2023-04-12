@@ -141,28 +141,46 @@ if (hrefUrl.indexOf('i18n_gallery&edit') >= 0) {
 
 //upload support webp, svg
 
+
+document.querySelectorAll('.imgthumb').forEach((x,i)=>{
+
+	if(x.innerHTML=='' && document.querySelectorAll('.primarylink')[i].getAttribute('href').indexOf('.svg') >= 0 ){
+
+		x.innerHTML = `<div class="massive-folder-linker"><i class="uil uil-file" style="  font-size: 4rem;
+  display: block;
+  margin-bottom: 15px;"></i></div>`;
+
+	}
+
+
+});
+
 if (document.querySelector('#imageTable') !== null) {
     console.log('upload screen');
     document.querySelectorAll('#imageTable tr').forEach(x => {
         const thumb = x.querySelector('.imgthumb');
 
-        if (x.querySelector('.primarylink') !== null) {
-            const linker = x.querySelector('.primarylink');
-            const linkerHref = linker.getAttribute('href');
-            const titlename = linker.innerHTML;
+        if (x.querySelector('.primarylink img') !== null) {
+     
 
 
-
-            if (linkerHref.indexOf('.svg') >= 0) {
-                 thumb.innerHTML = `<a href="${linkerHref}" rel=" facybox_i"><img src="${linkerHref}"></a>`;
+            if (x.querySelector('.primarylink img').getAttribute('src').indexOf('.webp') >= 0) {
+                 thumb.innerHTML = `<a href="${x.querySelector('.primarylink img').getAttribute('src')}"
+                  rel=" facybox_i"><img src="${x.querySelector('.primarylink img').getAttribute('src')}"></a>`;
             }
 
-            if (linkerHref.indexOf('.webp') >= 0) {
-                 thumb.innerHTML = `<a href="${linkerHref}" rel=" facybox_i"><img src="${linkerHref}"></a>`;
-            }
+
+
+            if (x.querySelector('.primarylink').getAttribute('href').indexOf('.svg') >= 0) {
+                thumb.innerHTML = `<a href="${x.querySelector('.primarylink').getAttribute('href')}" rel=" facybox_i">
+                <img src="${x.querySelector('.primarylink').getAttribute('href')}"></a>`;
+           }
         }
     })
 }
+
+
+
 
 //
 
