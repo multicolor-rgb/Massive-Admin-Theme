@@ -19,6 +19,11 @@ body {
 	font-size: 0.9rem;
 }
 
+.primarylink img{
+	display: none;
+}
+
+
 h1,
 h2,
 h3,
