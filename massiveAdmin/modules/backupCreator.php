@@ -40,7 +40,7 @@
         <option value="<?php echo GSDATAUPLOADPATH; ?>">Uploads folder</option>
     </select>
 
-    <button class="button" name="backupcreate" style="padding:10px 15px">Create Backup</button>
+    <button class="button" name="backupcreate" style="padding:10px 15px"><?php i18n_r('massiveAdmin/CREATEBACKUP'); ?></button>
 
 
 </form>
@@ -80,6 +80,4 @@ if (isset($_POST['backupcreate'])) {
 if (isset($_POST['delbackup'])) {
 
     $MA->deleteBackupZip();
-}
-
-;?>
+}; ?>

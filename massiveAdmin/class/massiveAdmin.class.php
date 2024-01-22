@@ -251,7 +251,11 @@ class MassiveAdminClass
 			$usrLangFile = $username->LANG[0];
 
 			echo '
-			<li> <span class="name">' . $usrfile . '</span><form action="" method="POST"><button type="submit" name="' . $newValue . '" class="delete-this" style="background:red;color:#fff;border:none;font-size:1.1rem;border-radius:3px"><i class="uil uil-trash-alt"></i></button></form>
+			<li> <span class="name">' . $usrfile . '</span><form action="" method="POST"><button type="submit" name="' . $newValue . '" class="delete-this" 
+			style="background:red;color:#fff;border:none;font-size:1.1rem;border-radius:3px">
+			
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="trash" style="display:inline-block;width:20px;height:20px;fill:#fff;"><path d="M20,6H16V5a3,3,0,0,0-3-3H11A3,3,0,0,0,8,5V6H4A1,1,0,0,0,4,8H5V19a3,3,0,0,0,3,3h8a3,3,0,0,0,3-3V8h1a1,1,0,0,0,0-2ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm7,14a1,1,0,0,1-1,1H8a1,1,0,0,1-1-1V8H17Z"></path></svg>
+			</button></form>
 			
 <form method="POST" style="width:100%;border:solid 1px #ddd; padding:10px;margin-top:10px;">
 
@@ -440,7 +444,8 @@ class MassiveAdminClass
 			echo '
 			<script>
 				window.addEventListener("load", (event) => {
-					document.querySelector(".submit").insertAdjacentHTML("afterend",`<button class="button" style="margin-left:5px;padding:7px;" onclick="event.preventDefault();showPass()"><i class="uil uil-key-skeleton-alt"></i> Show Password</button>`);
+					document.querySelector(".submit").insertAdjacentHTML("afterend",`<button class="button" style="margin-left:5px;padding:7px;" onclick="event.preventDefault();showPass()">
+  Show Password</button>`);
 				});
 
 				function showPass(){

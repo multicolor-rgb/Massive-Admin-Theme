@@ -86,7 +86,7 @@ if (file_exists(GSDATAOTHERPATH . 'massiveTheme/option.txt')) {
 }
 
 
-register_style('masivestyle', $SITEURL . 'plugins/massiveAdmin/theme/' . $themeChecker  . '.css', '2.0', 'screen');
+register_style('masivestyle', $SITEURL . 'plugins/massiveAdmin/theme/' . $themeChecker  . '.css', '5.0', 'screen');
 queue_style('masivestyle', GSBACK);
 
 add_action('footer', 'ckeStyleImplementation');
@@ -256,7 +256,7 @@ if (file_exists($helpFile)) {
 	$help = i18n_r('massiveAdmin/HELP');
 
 	if ($checkTrue == 'true') {
-		add_action('nav-tab', 'createSideMenu', [$thisfile, '<i class="uil uil-life-ring"></i>' . $help, 'helpfromuser']);
+		add_action('nav-tab', 'createSideMenu', [$thisfile, '<i class="gg-support"></i>' . $help, 'helpfromuser']);
 	}
 }
 
@@ -333,13 +333,14 @@ function makeFileInTheme()
 
 
 
+$bctitle = i18n_r('massiveAdmin/BACKUPCREATOR');
+
+add_action('backups-sidebar', 'createSideMenu',  [$thisfile, $bctitle, 'backupcreator']);
 
 
-add_action('backups-sidebar', 'createSideMenu',  [$thisfile, 'Backup Creator 🖥', 'backupcreator']);
+$tctitle = i18n_r('massiveAdmin/THEMECONFIGURATORNAME');
 
-
-
-add_action('theme-sidebar', 'createSideMenu',  [$thisfile, 'Theme Configurator', 'themesettings']);
+add_action('theme-sidebar', 'createSideMenu',  [$thisfile, $tctitle, 'themesettings']);
 
 
 
@@ -365,7 +366,7 @@ function mats($field)
 
 		
 	} else {
-		echo 'no settings.json create';
+		echo i18n_r('massiveAdmin/NOSETTINGSCREATED');
 	}
 };
 
@@ -390,7 +391,7 @@ function r_mats($field)
 			}
 
 	} else {
-		echo 'no settings.json create';
+		echo i18n_r('massiveAdmin/NOSETTINGSCREATED');
 	}
 }
 

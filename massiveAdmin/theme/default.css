@@ -651,13 +651,7 @@
  	}
  }
 
- body#index,
- body#resetpassword {
- 	background-color: #fff;
- 	background-image: url("https://picsum.photos/1600/900/?grayscale");
- 	background-size: cover;
- 	background-position: center center;
- }
+
 
  body#index h3,
  body#resetpassword h3 {

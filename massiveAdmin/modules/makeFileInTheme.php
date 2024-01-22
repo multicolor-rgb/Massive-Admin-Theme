@@ -50,7 +50,7 @@
 
 		.makefile {
 			display: grid;
-			grid-template-columns: 1fr;
+			grid-template-columns: 1fr 1fr 1fr;
 			gap: 10px;
 		}
 
@@ -119,6 +119,6 @@
 		file_put_contents(GSTHEMESPATH . $_POST['filename'], '');
 	};
 
-	echo '<div class="updated"><p>' . $_POST['filename'] . i18n_r('massiveAdmin/CREATED') . '</p></div>';
+	echo '<div class="updated"><p>' . $_POST['filename'] . i18n_r('massiveAdmin/FILECREATED') . '</p></div>';
 	echo ("<meta http-equiv='refresh' content='2'>");
 }; ?>

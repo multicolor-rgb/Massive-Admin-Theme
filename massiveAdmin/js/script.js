@@ -72,7 +72,8 @@ if (document.querySelector('#pages') !== null) {
 	document.querySelector(' #editpages tr:nth-child(1) th:nth-child(1)').insertAdjacentHTML('afterend', '<th>URL</th>');
 
 	document.querySelectorAll('#editpages .secondarylink a').forEach(sl => {
-		sl.innerHTML = '<i class="uil uil-search"></i>';
+		sl.innerHTML = `
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="search" style="display:inline-block;width:13px;margin-bottom:-4px"><path fill="var(--main-color)" d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"></path></svg>`;
 	});
 
 	document.querySelectorAll('#editpages tr').forEach(tr => {
@@ -112,10 +113,12 @@ $('.pagetitle').on('click', '.switch', function () {
 });
 
 document.querySelectorAll('.switch').forEach(sx => {
-	sx.insertAdjacentHTML('afterbegin', '<i class="uil uil-plus"></i>');
+	sx.insertAdjacentHTML('afterbegin', `
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="plus" style="display:inline-block;width:15px;height:15px;fill:var(--main-color)"><path d="M19,11H13V5a1,1,0,0,0-2,0v6H5a1,1,0,0,0,0,2h6v6a1,1,0,0,0,2,0V13h6a1,1,0,0,0,0-2Z"></path></svg>`);
 });
 
-document.querySelector('#header .nav').insertAdjacentHTML('beforebegin', '<button class="rwd">MENU<i  class="uil uil-bars"></i></button>');
+document.querySelector('#header .nav').insertAdjacentHTML('beforebegin', `<button class="rwd" >MENU  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="bars" style="display:inline-block;width:20px;height:20px;margin-bottom:-5px;"><path fill="#fff" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"></path></svg></button>`);
 
 document.querySelector('.rwd').addEventListener('click', () => {
 
@@ -129,11 +132,15 @@ document.querySelector('.rwd').addEventListener('click', () => {
 });
 
 if (document.querySelector('#edit .edit-nav') !== null) {
-	document.querySelector('#edit .edit-nav a:nth-child(1)').insertAdjacentHTML('beforeend', '<i class="uil uil-search"></i>');
+	document.querySelector('#edit .edit-nav a:nth-child(1)').insertAdjacentHTML('beforeend', `
+	
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="search" style="display:inline-block;width:10px;fill:#fff !important;margin-left:5px"><path  d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"></path></svg>
+	
+	`);
 }
 
 if (document.querySelector('#header #nav_i18n_gallery') !== null) {
-	document.querySelector('#header #nav_i18n_gallery a').insertAdjacentHTML('afterbegin', '<i class="uil uil-images"></i>');
+	document.querySelector('#header #nav_i18n_gallery a').insertAdjacentHTML('afterbegin', '');
 };
 
 // add uploader on screen
@@ -162,9 +169,7 @@ if (hrefUrl.indexOf('i18n_gallery&edit') >= 0) {
 document.querySelectorAll('.imgthumb').forEach((x,i)=>{
 	if(x.innerHTML=='' && document.querySelectorAll('.primarylink')[i].getAttribute('href').indexOf('.svg') >= 0 ){
 
-		x.innerHTML = `<div class="massive-folder-linker"><i class="uil uil-file" style="  font-size: 4rem;
-  display: block;
-  margin-bottom: 15px;"></i></div>`;
+		x.innerHTML = `<div class="massive-folder-linker"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="file" style="display:inline-block;width:50px;"><path fill="#fff" d="M20,8.94a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19l-.09,0L13.06,2H7A3,3,0,0,0,4,5V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V9S20,9,20,8.94ZM14,5.41,16.59,8H14ZM18,19a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V5A1,1,0,0,1,7,4h5V9a1,1,0,0,0,1,1h5Z"></path></svg></div>`;
 	}
 });
 

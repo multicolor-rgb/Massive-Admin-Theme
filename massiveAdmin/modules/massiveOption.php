@@ -16,7 +16,9 @@ if (file_exists($filename)) {
 <div class="massiveoption">
 
 	<div class="hidetitle" id="hidetitle1">
-		<h3><?php echo i18n_r('massiveAdmin/MAITENANCETITLE'); ?></h3> <i class="uil uil-arrow-down"></i>
+		<h3><?php echo i18n_r('massiveAdmin/MAITENANCETITLE'); ?></h3> 
+		<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="arrow-down" style="display:inline-block;width:20px;"><path fill="var(--main-color)" d="M17.71,11.29a1,1,0,0,0-1.42,0L13,14.59V7a1,1,0,0,0-2,0v7.59l-3.29-3.3a1,1,0,0,0-1.42,1.42l5,5a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l5-5A1,1,0,0,0,17.71,11.29Z"></path></svg>
+
 	</div>
 
 	<div class="hidecontent hidecontent1">
@@ -34,7 +36,10 @@ if (file_exists($filename)) {
 	</div>
 
 	<div class="hidetitle" id="hidetitle2">
-		<h3><?php echo i18n_r('massiveAdmin/BOOTSTRAPTITLE'); ?></h3> <i class="uil uil-arrow-down"></i>
+		<h3><?php echo i18n_r('massiveAdmin/BOOTSTRAPTITLE'); ?></h3>
+		
+		<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="arrow-down" style="display:inline-block;width:20px;"><path fill="var(--main-color)" d="M17.71,11.29a1,1,0,0,0-1.42,0L13,14.59V7a1,1,0,0,0-2,0v7.59l-3.29-3.3a1,1,0,0,0-1.42,1.42l5,5a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l5-5A1,1,0,0,0,17.71,11.29Z"></path></svg>
+
 	</div>
 
 	<div class="hidecontent hidecontent2">

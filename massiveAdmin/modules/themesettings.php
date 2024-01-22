@@ -1,11 +1,10 @@
 <h3>Theme Configurator</h3>
 
-<p style="background:#fafafa;border:solid 1px #ddd;padding:15px;">if you want to use settings for your template, just create settings.json in the folder of the template you are using and apply the appropriate structure as
-    in the example. Then apply the <b>mats('fieldname')</b> or <b>r_mats('fieldname')</b> for return function to the appropriate fields.
+<p style="background:#fafafa;border:solid 1px #ddd;padding:15px;"><?php echo i18n_r("massiveAdmin/HOWUSETHEMECONFIG");?>
 
     <br>
     <br>
-    <button class="button showdialog">Watch example structure</button>
+    <button class="button showdialog"><?php echo i18n_r("massiveAdmin/WATCHEXAMPLE");?></button>
 
 </p>
 
@@ -120,7 +119,7 @@ echo "Active Theme: <b>$activeTemplate</b> <br><br>";; ?>
 
 
 
-<h3 style="margin:0">Settings</h3>
+<h3 style="margin:0"><?php echo i18n_r("massiveAdmin/SETTINGS");?></h3>
 <hr>
 <?php
 
@@ -218,7 +217,7 @@ if (file_exists(GSTHEMESPATH . $activeTemplate . '/settings.json')) {
             echo '</select>';
 
             echo '<script>
-                document.querySelector("select.' . str_replace(" ", "", $key) . '").value = "' . trim($sel) . '"; 
+                document.querySelector("select.' . str_replace(" ", "", $key) . '").value = "' . trim($loop->value) . '"; 
             </script>';
         } elseif ($loop->type  == 'link') {
 
@@ -257,7 +256,7 @@ if (file_exists(GSTHEMESPATH . $activeTemplate . '/settings.json')) {
 };
 
 echo '
-    <button input="submit" name="ssettings" style="background:var(--main-color);padding:10px 15px;border:none; color:#fff;border-radius:10px;">Save Settings</button>
+    <button input="submit" name="ssettings" style="background:var(--main-color);padding:10px 15px;border:none; color:#fff;border-radius:10px;">'.i18n_r('massiveAdmin/SAVEOPTION').'</button>
     </form>';
 ?>
 
@@ -319,7 +318,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ssettings'])) {
                         y.preventDefault();
 
                         const url = "<?php global $SITEURL;
-                                        echo $SITEURL . "plugins/multiBlock/files/imagebrowser.php?"; ?>&func=" + e.querySelector('input[type="text"]').getAttribute('name');
+                                        echo $SITEURL . "plugins/massiveAdmin/files/imagebrowser.php?"; ?>&func=" + e.querySelector('input[type="text"]').getAttribute('name');
 
                         const win = window.open(url, "myWindow", "tolbar=no,scrollbars=no,menubar=no,width=500,height=500");
 
@@ -344,7 +343,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ssettings'])) {
                         y.preventDefault();
 
                         const url = "<?php global $SITEURL;
-                                        echo $SITEURL . "plugins/multiBlock/files/filebrowser.php?"; ?>&type=all&func=" + e.querySelector('input[type="text"]').getAttribute('name');
+                                        echo $SITEURL . "plugins/massiveAdmin/files/filebrowser.php?"; ?>&type=all&func=" + e.querySelector('input[type="text"]').getAttribute('name');
 
                         const win = window.open(url, "myWindow", "tolbar=no,scrollbars=no,menubar=no,width=500,height=500");
 
@@ -364,11 +363,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ssettings'])) {
   top: 0;
   right: 10px;
   top: 10px;
-  padding: 10px 15px;border-radius:5px;border:none;
-  cursor:pointer;">Close</button>
+  padding: 5px;border-radius:5px;border:none;
+  cursor:pointer;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display:inline-block;width:25px;height:25px;margin:0;padding:0 " id="times"><path fill="#fff" d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"></path></svg></button>
 
-    <h3>How create own settins?</h3>
-    <p>create yours settings.json on root folder yours theme with structure based on this example with different types of options</p>
+    <h3><?php echo i18n_r("massiveAdmin/HOWCREATETITLE");?></h3>
+    <p>
+    <?php echo i18n_r("massiveAdmin/TUTORIALHOWCREATESETTINGS");?>
+    </p>
 
     <div class="code">
         {<br>

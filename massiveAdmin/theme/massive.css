@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css");
+
 
 :root {
 	--ggs: 1;
 	--main-color: #00162a;
+	--main-color-d: #000b14;
 	--secondary-color: #f4f5f6;
 	--third-color: #fff;
 }
@@ -34,7 +34,7 @@
 
 body {
 	background: var(--secondary-color);
-	font-family: "Lato", sans-serif;
+	font-family: system-ui, sans-serif;
 	font-size: 0.9rem;
 }
 
@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Lato", sans-serif;
+	font-family: system-ui, sans-serif;
 	color: var(--main-color);
 	font-style: unset;
 }
@@ -710,7 +710,9 @@ tr .linker {
 body#index,
 body#resetpassword {
 	background-color: var(--main-color);
-	background-image: url("https://picsum.photos/1600/900/?blur");
+	/*background-image: url("https://picsum.photos/1600/900/?blur");*/
+
+	background:linear-gradient(to bottom, var(--main-color), var(--main-color-d));
 	background-size: cover;
 	background-position: center center;
 }
