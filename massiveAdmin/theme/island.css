@@ -15,8 +15,8 @@ body#resetpassword {
 .wrapper table tr#tr-index.l-0 td.secondarylink a::before {content: normal;}
 .wrapper .nav li a:link, .wrapper .nav li a:visited, .wrapper #pill li a:link, .wrapper #pill li a:visited {color: #EEEEEE; font-weight: 600 !important;}
 
-.leftnav .uil-power {color: #CC0000;} /* logout icon*/
-.nav .uil-tag { color: #FF9900;} /* custom menu icon */
+.leftnav #power {fill: #CC0000 !important; width:22px!important;} /* logout icon*/
+.gg-add { color: #FF9900 !important;} /* custom menu icon */
 
 .massive-folder-linker {background: Orange!important; border-radius:5px;}
 .massive-folder-linker svg{width:80px !important;}
