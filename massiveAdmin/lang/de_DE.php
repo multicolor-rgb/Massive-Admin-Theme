@@ -5,13 +5,13 @@ $i18n = [
 	'MAINTENANCE_ON' 				=> 'Wartungsmodus Ein?',
 	'CONTENT_MAINTENANCE_MODE' 		=> 'Inhalt des Wartungsmodus:',
 	'TURNONBOOTSTRAPGRID' 			=> 'Bootstrap-Grid 4.0 einschalten?',
-	'TURNONBOOTSTRAPGRIDONTHEME' 	=> 'Bootstrap-Grid-CSS zum Frontend-Theme hinzufï¿½gen?',
+	'TURNONBOOTSTRAPGRIDONTHEME' 	=> 'Bootstrap-Grid-CSS zum Frontend-Theme hinzufügen?',
 	'YES' 							=> 'Ja',
 	'NO' 							=> 'Nein',
-	'SAVEOPTION' 					=> 'ï¿½nderungen speichern',
-	'SUPPORT' 						=> 'Wenn Sie meine Arbeit ï¿½ber PayPal unterstï¿½tzen mï¿½chten :) Danke! ',
+	'SAVEOPTION' 					=> 'Änderungen speichern',
+	'SUPPORT' 						=> 'Wenn Sie meine Arbeit über PayPal unterstützen möchten :) Danke! ',
 	'UPLOADFILE' 					=> 'Datei hochladen',
-	'ANOTHERPAGE' 					=> '<strong>ï¿½nderungen gespeichert!</strong> Gehe zu einer anderen Seite:)',
+	'ANOTHERPAGE' 					=> '<strong>Änderungen gespeichert!</strong> Gehe zu einer anderen Seite:)',
 	'EDITCOMPONENTS' 				=> 'Komponenten bearbeiten',
 	'MASSIVEADMINSETTINGSTITLE' 	=> 'MassiveAdmin-Einstellungen',
 	'DROPFILES' 					=> 'Dateien hier zum Hochladen ablegen',
@@ -19,7 +19,7 @@ $i18n = [
 
 	//options on file edit
 	'COPYFILE' 						=> 'Datei kopieren',
-	'RENAMEFILE' 					=> 'Verzeichnis umbenennen / ï¿½ndern',
+	'RENAMEFILE' 					=> 'Verzeichnis umbenennen / ändern',
 	'DOWNLOADFILE' 					=> 'Herunterladen',
 	'INFOCOPY' 						=> 'Ihre kopierte Datei befindet sich in ',
 	'INFOERROR' 					=> 'Eine Datei mit diesem Namen existiert bereits in diesem Verzeichnis ',
@@ -36,16 +36,16 @@ $i18n = [
 	'HIDEMENUTITLE' 				=> 'Benutzermanager & Abschnitte',
 	'SHOW' 							=> 'Zeigen',
 	'HIDE' 							=> 'Verstecken',
-	'HIDSECTIONTITLE' 				=> 'Welche Abschnitte mï¿½chten Sie ausblenden?',
-	'HIDEPAGES' 					=> 'Abschnitt ï¿½<strong>Seiten</strong>ï¿½ ausblenden?',
-	'HIDEFILES' 					=> 'Abschnitt ï¿½<strong>Dateien</strong>ï¿½ ausblenden?',
-	'HIDETHEMES' 					=> 'Abschnitt ï¿½<strong>Themen</strong>ï¿½ ausblenden?',
-	'HIDEBACKUP' 					=> 'Abschnitt ï¿½<strong>Backup</strong>ï¿½ ausblenden?',
-	'HIDEPLUGIN' 					=> 'Abschnitt ï¿½<strong>Plugin</strong>ï¿½ ausblenden?',
-	'HIDESUPPORT' 					=> 'Abschnitt ï¿½<strong>Support</strong>ï¿½ ausblenden?',
-	'HIDESETTINGS' 					=> 'Abschnitt ï¿½<strong>MassiveAdmin-Einstellungen</strong>ï¿½ ausblenden?',
-	'HIDEI18NGALLERY' 				=> 'Abschnitt ï¿½<strong>i18n-Galerie</strong>ï¿½ ausblenden? (falls vorhanden)',
-	'HIDEUSERS' 					=> 'Abschnitte fï¿½r folgende Benutzer ausblenden:',
+	'HIDSECTIONTITLE' 				=> 'Welche Abschnitte möchten Sie ausblenden?',
+	'HIDEPAGES' 					=> 'Abschnitt „<strong>Seiten</strong>“ ausblenden?',
+	'HIDEFILES' 					=> 'Abschnitt „<strong>Dateien</strong>“ ausblenden?',
+	'HIDETHEMES' 					=> 'Abschnitt „<strong>Themen</strong>“ ausblenden?',
+	'HIDEBACKUP' 					=> 'Abschnitt „<strong>Backup</strong>“ ausblenden?',
+	'HIDEPLUGIN' 					=> 'Abschnitt „<strong>Plugin</strong>“ ausblenden?',
+	'HIDESUPPORT' 					=> 'Abschnitt „<strong>Support</strong>“ ausblenden?',
+	'HIDESETTINGS' 					=> 'Abschnitt „<strong>MassiveAdmin-Einstellungen</strong>“ ausblenden?',
+	'HIDEI18NGALLERY' 				=> 'Abschnitt „<strong>i18n-Galerie</strong>“ ausblenden? (falls vorhanden)',
+	'HIDEUSERS' 					=> 'Abschnitte für folgende Benutzer ausblenden:',
 
 	//user manager
 	'USERMANAGER' 					=> 'Benutzer verwalten',
@@ -57,39 +57,39 @@ $i18n = [
 	'USERHELP' 						=> 'Benutzerhilfe',
 
 	//menu external
-	'MENUEXTERNAL' 					=> 'Benutzerdefinierter Menï¿½-Link-Manager',
+	'MENUEXTERNAL' 					=> 'Benutzerdefinierter Menü-Link-Manager',
 	'LINKNAME' 						=> 'Linkname:',
 	'LINKURL' 						=> 'Link-URL:',
 	'LINKICON' 						=> 'Link-Symbol',
-	'NEWWINDOW' 					=> 'Link in neuem Fenster ï¿½ffnen?',
+	'NEWWINDOW' 					=> 'Link in neuem Fenster öffnen?',
 	'MOREICONS'  					=> '(Weitere Symbole finden Sie hier.):',
-	'ADDLINK' 						=> 'Neuen Link hinzufï¿½gen',
+	'ADDLINK' 						=> 'Neuen Link hinzufügen',
 
 	//own footer option
 	'OWNFOOTERTITLE' 				=> 'White-Label-Optionen',
-	'OWNFOOTERNAME' 				=> 'Benutzerdefinierter Fuï¿½zeilenname:',
-	'OWNFOOTERICON' 				=> 'Benutzerdefiniertes Fuï¿½zeilensymbol (max. 256 Pixel Hï¿½he | .jpg, .jpeg, .png, .gif)',
+	'OWNFOOTERNAME' 				=> 'Benutzerdefinierter Fußzeilenname:',
+	'OWNFOOTERICON' 				=> 'Benutzerdefiniertes Fußzeilensymbol (max. 256 Pixel Höhe | .jpg, .jpeg, .png, .gif)',
 	'OWNLOGO' 						=> 'Benutzerdefiniertes Logo auf der Anmeldeseite?',
-	'OWNFOOTERLINK' 				=> 'Benutzerdefinierter Fuï¿½zeilen-Link:',
+	'OWNFOOTERLINK' 				=> 'Benutzerdefinierter Fußzeilen-Link:',
 	'OWNFOOTERHEADER' 				=> 'Benutzerdefiniertes Header-CSS/Skripte:',
-	'OWNFOOTERFOOTER' 				=> 'Benutzerdefinierte Fuï¿½zeilenskripte:',
+	'OWNFOOTERFOOTER' 				=> 'Benutzerdefinierte Fußzeilenskripte:',
 
 	//owncolor
-	'CHANGETITLECOLOR' 				=> 'CMS-Farben ï¿½ndern',
+	'CHANGETITLECOLOR' 				=> 'CMS-Farben ändern',
 	'MAINCOLOR' 					=> 'Hauptfarbe:',
 	'BGCOLOR' 						=> 'Hintergrundfarbe:',
-	'CHANGENAME' 					=> 'ï¿½ndern Sie den Spitznamen in einen anderen als den Administrator-Spitznamen',
+	'CHANGENAME' 					=> 'Ändern Sie den Spitznamen in einen anderen als den Administrator-Spitznamen',
 
 	//snippet
 	'SNIPPET' 						=> 'Snippets',
-	'ADDSNIPPET' 					=> 'Snippet hinzufï¿½gen',
+	'ADDSNIPPET' 					=> 'Snippet hinzufügen',
 	'EDITSNIPPET' 					=> 'Snippets bearbeiten',
 	'TITLESNIPPET' 					=> 'Titel (ohne Leerzeichen)',
 	'SUBMITSNIPPET' 				=> 'Snippets speichern',
 
 	//migrate
 	'MIGRATETITLE' 					=> 'Site-Migration & SSL',
-	'MIGRATEDOMAIN' 				=> 'Domï¿½nenmigration',
+	'MIGRATEDOMAIN' 				=> 'Domänenmigration',
 	'OLDDOMAIN' 					=> 'Alte Website-Adresse',
 	'NEWDOMAIN' 					=> 'Neue Website-Adresse',
 	'REPLACEDOMAIN' 				=> 'URL ersetzen',
@@ -105,9 +105,9 @@ $i18n = [
 
 	//login options
 	'LOGINOPTIONS' 					=> 'Anmeldeoptionen',
-	'TURNONSHOWPASSWORDTITLE' 		=> 'Schaltflï¿½che ï¿½Passwort anzeigenï¿½',
-	'SHOWPASSWORDQUESTION' 			=> 'Schaltflï¿½che ï¿½Passwort anzeigenï¿½ beim Anmelden aktivieren?',
-	'REMOVEFORGETPASSWORDTITLE' 	=> 'ï¿½Passwort vergessen?ï¿½ entfernen',
+	'TURNONSHOWPASSWORDTITLE' 		=> 'Schaltfläche „Passwort anzeigen“',
+	'SHOWPASSWORDQUESTION' 			=> 'Schaltfläche „Passwort anzeigen“ beim Anmelden aktivieren?',
+	'REMOVEFORGETPASSWORDTITLE' 	=> '„Passwort vergessen?“ entfernen',
 	'SAVESETTINGS' 					=> 'Einstellungen speichern',
 
 	//GSCONFIG
@@ -115,7 +115,7 @@ $i18n = [
 	'GSCONFIGSAVE' 					=> 'GSCONFIG-Einstellungen speichern',
 
 	'UNISTALLER' 					=> 'Plugins deinstallieren',
-	'UNISTALLQUESTION' 				=> 'Sie mï¿½chten deinstallieren',
+	'UNISTALLQUESTION' 				=> 'Sie möchten deinstallieren',
 
 	//mToper
 	"TAB_PAGES" 					=> 'Seiten',
@@ -139,7 +139,7 @@ $i18n = [
 
 	'FRONTENDTITLE' 				=> 'Frontend-Einstellungen',
 	'TURNONMTOPER' 					=> 'Frontend-Leiste einschalten?',
-	'STYLEINFO' 					=> 'Stil fï¿½r FrontEnd-Seitenleiste',
+	'STYLEINFO' 					=> 'Stil für FrontEnd-Seitenleiste',
 	'ADMINTHEMESELECTOR' 			=> 'Admin Theme Selector',
 
 	//manage users
@@ -147,21 +147,22 @@ $i18n = [
 	'EMAIL' 						=> 'e-mail:',
 	'PASSWORD' 						=> 'Passwort:',
 	'LANG' 							=> 'Sprache:',
-	'CHANGEPLACEHOLDER' 			=> 'nur ï¿½ndern, wenn Sie ï¿½ndern mï¿½chten'
+	'CHANGEPLACEHOLDER' 			=> 'nur ändern, wenn Sie ändern möchten',
 
 
 	//new on 5.0
 
 	'FILECREATED' 					=> 'Datei erstellt!',
 	'WATCHEXAMPLE' 					=> 'Beispielstruktur anzeigen',
-	'HOWUSETHEMECONFIG' 			=> 'Wenn Sie Einstellungen fï¿½r Ihre Vorlage verwenden mï¿½chten, erstellen Sie einfach <code style="color:blue;">settings.json</code> im Ordner der Vorlage, die Sie verwenden, und wenden Sie die entsprechende Struktur an wie im Beispiel. Wenden Sie dann <b style="color:green;">mats("fieldname")</b> oder <b style="color:green;">r_mats("fieldname")</b> fï¿½r die Rï¿½ckgabefunktion an die entsprechenden Felder.',
+	'HOWUSETHEMECONFIG' 			=> 'Wenn Sie Einstellungen für Ihre Vorlage verwenden möchten, erstellen Sie einfach <code style="color:blue;">settings.json</code> im Ordner der Vorlage, die Sie verwenden, und wenden Sie die entsprechende Struktur an wie im Beispiel. Wenden Sie dann <b style="color:green;">mats("fieldname")</b> oder <b style="color:green;">r_mats("fieldname")</b> für die Rückgabefunktion an die entsprechenden Felder.',
 	'HOWCREATETITLE' 				=> 'Wie erstelle ich meine eigenen Einstellungen?',
 	'TUTORIALHOWCREATESETTINGS' 	=> 'Erstellen Sie Ihre <code style="color:blue;">settings.json</code> im Stammverzeichnis Ihres Theme-Ordners, mit einer Struktur basierend auf diesem Beispiel mit verschiedenen Arten von Optionen',
 	'THEMECONFIGURATORNAME' 		=> 'Theme-Konfigurator',
 
 	'BACKUPCREATOR' 				=> 'Backup-Ersteller',
 	'CREATEBACKUP' 					=> 'Backup erstellen',
-	'SETTINGS' 				=> 'Einstellungen',
-	'NOSETTINGSCREATED' 			=> 'Keine Settings.json erstellt.'
+	'SETTINGS' 						=> 'Einstellungen',
+	'NOSETTINGSCREATED' 			=> 'Keine Settings.json erstellt.',
+	'SHOWPASSWORD' 					=> 'Passwort anzeigen'
 
 ];

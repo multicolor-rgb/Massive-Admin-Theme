@@ -147,7 +147,7 @@ $i18n = [
 	'EMAIL' => 'электронная почта:',
 	'PASSWORD' => 'Пароль:',
 	'LANG' => 'Язык:',
-	'CHANGEPLACEHOLDER' => 'изменить, только если вы хотите изменить'
+	'CHANGEPLACEHOLDER' => 'изменить, только если вы хотите изменить',
 
 
 	//new on 5.0
@@ -162,6 +162,7 @@ $i18n = [
 	'BACKUPCREATOR' 				=> 'Создатель резервной копии',
 	'CREATEBACKUP' 					=> 'Создать резервную копию',
 	'SETTINGS' 						=> 'Настройки',
-	'NOSETTINGSCREATED' 			=> 'Settings.json не создан.'
+	'NOSETTINGSCREATED' 			=> 'Settings.json не создан.',
+	'SHOWPASSWORD' 					=> 'Показать пароль'
 
 ];

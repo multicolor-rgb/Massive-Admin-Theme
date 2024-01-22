@@ -162,6 +162,7 @@ $i18n = [
 	'BACKUPCREATOR' 				=> 'Criador de backup',
 	'CREATEBACKUP' 					=> 'Criar Backup',
 	'SETTINGS' 						=> 'Configurações',
-	'NOSETTINGSCREATED' 			=> 'Nenhum arquivo settings.json criado.'
+	'NOSETTINGSCREATED' 			=> 'Nenhum arquivo settings.json criado.',
+	'SHOWPASSWORD' 					=> 'Mostrar senha'
 
 ];

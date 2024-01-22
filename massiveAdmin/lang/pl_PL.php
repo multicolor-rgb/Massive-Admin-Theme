@@ -162,6 +162,7 @@ $i18n = [
 	'BACKUPCREATOR' 				=> 'Kreator kopii zapasowych',
 	'CREATEBACKUP' 					=> 'Utwórz kopię zapasową',
 	'SETTINGS' 						=> 'Ustawienia',
-	'NOSETTINGSCREATED' 			=> 'Nie utworzono pliku Settings.json.'
+	'NOSETTINGSCREATED' 			=> 'Nie utworzono pliku Settings.json.',
+	'SHOWPASSWORD' 					=> 'Pokaż hasło'
 
 ];

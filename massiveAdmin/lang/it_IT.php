@@ -147,7 +147,7 @@ $i18n = [
 	'EMAIL' 						=> 'e-mail:',
 	'PASSWORD' 						=> 'Password:',
 	'LANG' 							=> 'Lingua:',
-	'CHANGEPLACEHOLDER' 			=> 'cambia solo se vuoi cambiare'
+	'CHANGEPLACEHOLDER' 			=> 'cambia solo se vuoi cambiare',
 
 
 	//new on 5.0
@@ -162,6 +162,7 @@ $i18n = [
 	'BACKUPCREATOR' 				=> 'Creatore di backup',
 	'CREATEBACKUP' 					=> 'Crea backup',
 	'SETTINGS' 						=> 'Impostazioni',
-	'NOSETTINGSCREATED' 			=> 'Nessun settings.json creato.'
+	'NOSETTINGSCREATED' 			=> 'Nessun settings.json creato.',
+	'SHOWPASSWORD' 					=> 'Mostra password'
 
 ];

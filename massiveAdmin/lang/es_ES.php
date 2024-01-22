@@ -147,7 +147,7 @@ $i18n = [
 	'EMAIL' 						=> 'correo electrónico:',
 	'PASSWORD' 						=> 'Contraseña:',
 	'LANG' 							=> 'Idioma:',
-	'CHANGEPLACEHOLDER' 			=> 'cambiar solo si quieres cambiar'
+	'CHANGEPLACEHOLDER' 			=> 'cambiar solo si quieres cambiar',
 
 
 	//new on 5.0
@@ -156,12 +156,13 @@ $i18n = [
 	'WATCHEXAMPLE' 					=> 'Ver estructura de ejemplo',
 	'HOWUSETHEMECONFIG' 			=> 'Si desea utilizar configuraciones para su plantilla, simplemente cree <code style="color:blue;">settings.json</code> en la carpeta de la plantilla que está utilizando y aplique la estructura adecuada. como en el ejemplo. Luego aplique <b style="color:green;">mats("fieldname")</b> o <b style="color:green;">r_mats("fieldname")</b> para la función de retorno a los campos apropiados.',
 	'HOWCREATETITLE' 				=> '¿Cómo crear tus propias configuraciones?',
-	'TUTORIALHOWCREATESETTINGS' 		=> 'Crea tu <code style="color:blue;">settings.json</code> en la raíz de tu carpeta de temas, con una estructura basada en este ejemplo con diferentes tipos de opciones',
+	'TUTORIALHOWCREATESETTINGS' 	=> 'Crea tu <code style="color:blue;">settings.json</code> en la raíz de tu carpeta de temas, con una estructura basada en este ejemplo con diferentes tipos de opciones',
 	'THEMECONFIGURATORNAME' 		=> 'Configurador de temas',
 
 	'BACKUPCREATOR' 				=> 'Creador de copias de seguridad',
 	'CREATEBACKUP' 					=> 'Crear copia de seguridad',
 	'SETTINGS' 						=> 'Configuración',
-	'NOSETTINGSCREATED' 			=> 'No se ha creado ningún archivo settings.json.'
+	'NOSETTINGSCREATED' 			=> 'No se ha creado ningún archivo settings.json.',
+	'SHOWPASSWORD' 					=> 'Mostrar contraseña'
 
 ];

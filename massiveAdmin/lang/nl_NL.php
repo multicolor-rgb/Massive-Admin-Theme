@@ -147,7 +147,7 @@ $i18n = [
 	'EMAIL' 	 					=> 'e-mail:',
 	'PASSWORD' 	 					=> 'Wachtwoord:',
 	'LANG' 	 						=> 'Taal:',
-	'CHANGEPLACEHOLDER' 	 		=> 'wijzig alleen als je wilt veranderen'
+	'CHANGEPLACEHOLDER' 	 		=> 'wijzig alleen als je wilt veranderen',
 
 
 	//new on 5.0
@@ -162,6 +162,7 @@ $i18n = [
 	'BACKUPCREATOR' 				=> 'Back-up maken',
 	'CREATEBACKUP' 					=> 'Back-up maken',
 	'SETTINGS' 						=> 'Instellingen',
-	'NOSETTINGSCREATED' 			=> 'Geen settings.json aangemaakt.'
+	'NOSETTINGSCREATED' 			=> 'Geen settings.json aangemaakt.',
+	'SHOWPASSWORD' 					=> 'Laat wachtwoord zien'
 
 ];
